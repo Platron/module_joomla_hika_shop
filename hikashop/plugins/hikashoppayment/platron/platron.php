@@ -54,7 +54,6 @@ class plgHikashoppaymentPlatron extends hikashopPaymentPlugin
 			'pg_lifetime'			=> isset($this->payment_params->lifetime)?$this->payment_params->lifetime*60:0,
 			'pg_testing_mode'		=> $this->payment_params->testmode,
 			'pg_description'		=> $strDescription,
-			'pg_user_ip'			=> $_SERVER['REMOTE_ADDR'],
 			'pg_language'			=> (JFactory::getLanguage()->getTag() == 'ru-RU')?'ru':'en',
 			'pg_check_url'			=> $server_url,
 			'pg_result_url'			=> $server_url,
